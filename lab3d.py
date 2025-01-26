@@ -3,4 +3,3 @@
 import os
 def free_space():
     return os.popen("df -h | grep '/$' | awk '{print $4}'").read().strip()
-print(free_space())
